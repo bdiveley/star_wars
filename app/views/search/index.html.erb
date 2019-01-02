@@ -1,0 +1,6 @@
+<h1>Search Your Favorite Star Wars Character</h1>
+
+<%= form_tag :search, method: :get, action: :show do %>
+  <%= text_field_tag :q, nil, placeholder: "Character Name" %>
+  <%= submit_tag "Search" %>
+<% end %>
